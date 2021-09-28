@@ -20,7 +20,7 @@ position: absolute;
 top:0;
 left:0;
 z-index:10;
-opacity:.76
+opacity:.86
 }
 
 /* Header */
@@ -38,7 +38,7 @@ nav{
   background: transparent;
   border-bottom: 1px white solid;
   position: relative;
-z-index: 20;
+  z-index: 20;
 }
 
 nav .navContent{
@@ -58,4 +58,87 @@ font-size: 2rem;
 
 .menu_item{
   margin-left: 1.7rem;
+}
+
+/************* Hero ****************/
+
+.hero{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  z-index: 20;
+  height: 90vh;
+}
+.left h1{
+  font-size: 3.5rem;
+  padding-bottom: .7rem;
+}
+
+.left p{
+  font-size: 1.1rem;
+  padding-bottom: .7rem;
+  color: white;
+  opacity: .8;
+}
+
+.abt_btn{
+  border: none;
+  background: unset;
+  color: white;
+  border: 1px solid white;
+  padding: .5rem 4rem;
+  border-radius: 7px;
+  transition: .2s ease-in;
+}
+
+.abt_btn:hover{
+  color: #0E6DC6;
+  background: #fff;
+  padding: .5rem 4rem;
+  border-radius: 7px;
+  transition: .2s ease-in;
+  transform: scale(.9);
+}
+
+.right{
+  text-align: left;
+}
+
+.left{
+  text-align: right;
+}
+
+.phone{
+width: 100%;
+}
+
+@media only screen and (max-width: 996px)  {
+  .left h1{
+    font-size: 2.5rem;
+    padding-bottom: .7rem;
+  }
+}
+
+@media only screen and (max-width: 768px)  {
+  .hero{
+    grid-template-columns:1fr;
+  }
+
+  .left h1{
+    font-size: 3rem;
+    padding-bottom: .4rem;
+  }
+  .left{
+    text-align: center;
+  }
+
+  .phone{
+    text-align: center;
+    width: 65%;
+    margin-left: 2rem;
+    }
+    .right{
+      text-align: center;
+    }
 }

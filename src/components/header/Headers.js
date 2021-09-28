@@ -12,8 +12,8 @@ const Headers = () => {
             </div>
             <div className="header"
                 style={{ backgroundImage: `url(${bg_img})` }}>
-                <Navigation bg={bg_img} />
-                <Hero />
+                <Navigation />
+                <Hero phone={phone} />
             </div>
         </>
     )
